@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      body {
+        font-family: 'Ubuntu Condensed', sans-serif;
+      }
+    </style>
+
+    <title>Enter a Message</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hi,</h1>
+      <div class="row">
+        <form class="col s12" action="/message" method="POST">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea
+                id="textarea1"
+                class="materialize-textarea"
+                name="message"
+              ></textarea>
+              <label for="textarea1">Message</label>
+              <button class="btn waves-effect waves-light" type="submit">
+                Send
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
