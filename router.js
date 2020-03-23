@@ -33,7 +33,6 @@ const requestHandler = (req, res) => {
       const addExtention = addFileName('txt');
       const addMessage = addExtention(message);
 
-      saveToFile('message', 'txt', message);
       return res.end('<h1>Message Sent</h1>');
     });
   }
